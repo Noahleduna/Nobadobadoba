@@ -5,6 +5,7 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
+		<link href="./_app/immutable/assets/_page-e4409d82.css" rel="stylesheet">
 		<link rel="modulepreload" href="./_app/immutable/start-44bbeec6.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index-2bb69101.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-f91a23ce.js">
@@ -15,12 +16,7 @@
 		<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-4e403496.js">
 		<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.js-9cbb603b.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout-da46b06b.js">
-		<link rel="modulepreload" href="./_app/immutable/components/pages/search/_layout.svelte-9acda6de.js">
-		<link rel="modulepreload" href="./_app/immutable/components/pages/search/_page.svelte-931b820a.js"><!-- HEAD_svelte-1lc4dl3_START --><link rel="stylesheet" href="/pico.min.css"><style>nav {
-      margin-left: 10%;
-      margin-right: 10%;
-    }
-  </style><!-- HEAD_svelte-1lc4dl3_END -->
+		<link rel="modulepreload" href="./_app/immutable/components/pages/todo/_page.svelte-d43d25a6.js">
 	</head>
 	<body>
 		<div style="display: contents">
@@ -37,25 +33,34 @@
 
 <hr>
 
+<div class="container svelte-4dg6l4"><h1 class="svelte-4dg6l4">TODO LIST</h1>
+    <input class="svelte-4dg6l4" value="">
+    <button class="svelte-4dg6l4">Add to the list</button>
+    <div class="layout svelte-4dg6l4"><div class="svelte-4dg6l4"><h1 class="svelte-4dg6l4">NEW</h1>
+            <ol style="height:300px;overflow-y:scroll" class="svelte-4dg6l4"><li class="svelte-4dg6l4">hej
+                    <button class="svelte-4dg6l4">done</button>
+                    </li><li class="svelte-4dg6l4">på
+                    <button class="svelte-4dg6l4">done</button>
+                    </li><li class="svelte-4dg6l4">dig
+                    <button class="svelte-4dg6l4">done</button>
+                    </li></ol></div>
+        <div style="position:relative" class="svelte-4dg6l4"><h1 class="svelte-4dg6l4">COMPLETED</h1>
+            <ul style="height:300px;overflow-y:scroll" class="svelte-4dg6l4"></ul>
+            <button style="position:absolute;right:5%" class="svelte-4dg6l4">Clear</button></div></div>
+</div>
 
 
-<main class="container">
-<div class="chat"><h1>Press any of the following categories to display their items</h1>
-  <hr>
-  <ul><li><a href="/search/users">Users</a></li><li><a href="/search/addresses">Address</a></li><li><a href="/search/banks">Banks</a></li><li><a href="/search/appliances">Appliances</a></li><li><a href="/search/beers">Beers</a></li><li><a href="/search/blood_types">Blood Types</a></li><li><a href="/search/credit_cards">Credit Cards</a></li></ul></div></main>
-
-
-		<script type="module" data-sveltekit-hydrate="1daamx7">
+		<script type="module" data-sveltekit-hydrate="x4igwu">
 			import { start } from "./_app/immutable/start-44bbeec6.js";
 
 			start({
 				env: {},
 				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="1daamx7"]').parentNode,
+				target: document.querySelector('[data-sveltekit-hydrate="x4igwu"]').parentNode,
 				version: "1711362785469",
 				hydrate: {
-					node_ids: [0, 3, 14],
-					data: [null,null,null],
+					node_ids: [0, 17],
+					data: [null,null],
 					form: null
 				}
 			});
