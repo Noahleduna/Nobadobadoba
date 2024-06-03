@@ -1,0 +1,36 @@
+---
+title: Inlägg 2
+date: "2024-05-13"
+keywords: ["Knapparnas funktion", "Lägga till spel"]
+---
+
+**Knapparnas funktion**
+
+Jag ändrade lite på tidigare kod och nu istället för ett if-kommando
+använder jag mig av nya mappar inuti min redan existerande casino app
+i visual studios för att ha spelen i för att ordna koden. Och skickar 
+spelaren till en ny hemsida vid ett klick på spelknappen:
+
+```
+on:click={() => {  
+            window.location.href = game.page;
+        }}
+```
+där game.page kan vara t.ex. '/casino/blackjack'.
+
+Jag lade också till så att knapparna blev större när man höll musen över dem
+samt sekade ner animationen:
+```
+    transition: transform 0.5s;
+}
+.game:hover{
+    transform: scale(1.1);
+```
+
+**Lägga till spel**
+
+Jag har även lagt till spel i de nya mapparna med kod som jag hittat 
+på nätet 
+men behövt anpassa koden 
+för att det ska funka i svelte samt designat om dem 
+en del. Koden har jag hittat på codeopen.io.

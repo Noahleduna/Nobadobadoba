@@ -2,58 +2,70 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="../favicon.png" />
+		<link rel="icon" href="../icon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-		<link href="../_app/immutable/assets/_layout-0f455165.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/start-44bbeec6.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index-2bb69101.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-f91a23ce.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index-7c1ede1d.js">
+		<link href="../_app/immutable/assets/app-51b40f09.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_layout-c2308f58.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-ee164014.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-3b0df29e.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-e110e2be.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-d6dba5bb.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/control-f5b05b5f.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/parse-f0c618df.js">
-		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-4e403496.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-46b401f2.js">
 		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.js-9cbb603b.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-da46b06b.js">
-		<link rel="modulepreload" href="../_app/immutable/components/pages/blog/_layout.svelte-3feab2b3.js">
-		<link rel="modulepreload" href="../_app/immutable/components/pages/blog/_path_/_page.svelte-98bf84e6.js">
-		<link rel="modulepreload" href="../_app/immutable/modules/pages/blog/_path_/_page.js-cede37f1.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_page-c7670bba.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/blog/_layout.svelte-fd8cde9e.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/blog/_path_/_page.svelte-1786bcf3.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/blog/_path_/_page.js-c1c1faf1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-5bc45d68.js">
 	</head>
 	<body>
 		<div style="display: contents">
 
 
-<nav><a href="/">Hem</a>
-  <a href="/memory">Memory</a>
-  <a href="/telltale">Telltale</a>
 
-  <a target="_blank" rel="noreferrer" href="https://github.com/lisaviktorsson/lisaviktorsson.github.com">GitHub</a>
-  <a href="/photoapp">Photo App</a>
-  <a href="/register">Register</a>
-  <a href="/todo">Todo App</a></nav>
 
-<hr>
 
 <main class="container svelte-lj7r42">
 
 
-<article><h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-grey">Projektstart</h1>
-  <p class="my-4 text-lg text-gray-500">Published: 2024-02-21</p>
-  <p>Hello, I am <em>Post One.</em></p>
-<p><strong>Nice to meet you!</strong></p></article>
+<article><h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-grey">Inlägg 1</h1>
+  <p class="my-4 text-lg text-gray-500">Published: 2024-05-06</p>
+  <p><strong>Startskärm</strong></p>
+<p>Senaste lektionerna har jag arbetat med att skapa en startskärm
+till mitt onlinecasino där jag vill ha en logga och bilder till
+olika knappar som leder till olika spel. För att skapa knapparna
+till de olika spelen använde jag mig av ett each-kommando för att göra
+det lättare att skapa nya framtida spel och css-klasser.</p>
+<p>.</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">&#123;#each games as game, i&#125;
+    &lt;div class = &#39;game&#39;
+        style = &#39;background-image: url(&#123;game.img&#125;);&#39;
+        on:click=&#123;() =&gt; &#123; 
+            game.pressed=true            
+            startscreen=false
+        &#125;&#125;
+        on:keypress=&#123;() =&gt; &#123; game.pressed=true
+        &#125;&#125;
+    &gt;&lt;h3&gt;&#123;game.name&#125;&lt;/h3&gt;&lt;/div&gt;
+    &#123;/each&#125;</code><!-- HTML_TAG_END --></pre>
+<p>Sen har jag även gjort så att genom att klicka på ett spel så tar det
+dig vidare till en ny sida med hjälp av ett if-kommando</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">&#123;#if startscreen&#125;</code><!-- HTML_TAG_END --></pre></article>
 </main>
 
 
-		<script type="module" data-sveltekit-hydrate="8sb8je">
-			import { start } from "../_app/immutable/start-44bbeec6.js";
+		<script type="module" data-sveltekit-hydrate="1w46ta8">
+			import { start } from "../_app/immutable/start-ee164014.js";
 
 			start({
 				env: {},
 				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="8sb8je"]').parentNode,
-				version: "1711362785469",
+				target: document.querySelector('[data-sveltekit-hydrate="1w46ta8"]').parentNode,
+				version: "1717402055066",
 				hydrate: {
 					node_ids: [0, 2, 7],
 					data: [null,null,null],

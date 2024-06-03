@@ -1,0 +1,18 @@
+---
+title: Inlägg 3
+date: "2024-06-03"
+keywords: ["Klar med hemsidan"]
+---
+**Klar**
+
+Jag har gjort ganska myket sen sist, fixat till koden på de olika spelen, t.ex. lagt till en return to hub knapp. Jag fixade även lite smådesignval för att göra det snyggt
+i den koden jag hittade vilket tog lång tid för jag behövde förstå mig på den koden först.
+
+.
+
+Jag laddade upp spelet på github.
+
+
+.
+
+Nu är det klart.

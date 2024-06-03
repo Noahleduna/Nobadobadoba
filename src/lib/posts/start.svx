@@ -1,9 +1,37 @@
 ---
-title: Projektstart
-date: "2024-02-21"
-keywords: ["planning"]
+title: Inlägg 1
+date: "2024-05-06"
+keywords: ["Startskärm"]
 ---
 
-Hello, I am _Post One._
+**Startskärm**
 
-**Nice to meet you!**
+Senaste lektionerna har jag arbetat med att skapa en startskärm 
+till mitt onlinecasino där jag vill ha en logga och bilder till 
+olika knappar som leder till olika spel. För att skapa knapparna
+till de olika spelen använde jag mig av ett each-kommando för att göra
+det lättare att skapa nya framtida spel och css-klasser.
+
+.
+
+```
+{#each games as game, i}
+    <div class = 'game'
+        style = 'background-image: url({game.img});'
+        on:click={() => { 
+            game.pressed=true            
+            startscreen=false
+        }}
+        on:keypress={() => { game.pressed=true
+        }}
+    ><h3>{game.name}</h3></div>
+    {/each}
+```
+
+Sen har jag även gjort så att genom att klicka på ett spel så tar det
+dig vidare till en ny sida med hjälp av ett if-kommando
+
+```
+{#if startscreen}
+```
+

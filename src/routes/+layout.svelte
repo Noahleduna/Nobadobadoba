@@ -1,9 +1,9 @@
 <script>
-
+import "../app.css"
 </script>
 
-
-<nav >
+<!---
+  <nav >
   <a href="/">Hem</a>
   <a href="/memory">Memory</a>
   <a href="/telltale">Telltale</a>
@@ -17,8 +17,10 @@
   <a href="/register">Register</a>
   <a href="/todo">Todo App</a>
   <a href="/chat">Chat</a>
+  <a href="/casino">Casino</a>
 </nav>
-
 <hr />
+-->
+
 
 <slot />
