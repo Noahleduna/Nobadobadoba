@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../icon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/app-51b40f09.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_layout-c2308f58.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-809a4d77.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-3b0df29e.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-e110e2be.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-d6dba5bb.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/control-f5b05b5f.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/parse-f0c618df.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-46b401f2.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.js-9cbb603b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-da46b06b.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/blog/_layout.svelte-fd8cde9e.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/blog/_path_/_page.svelte-1786bcf3.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/blog/_path_/_page.js-c1c1faf1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page-5bc45d68.js">
+	</head>
+	<body>
+		<div style="display: contents">
+
+
+
+
+
+<main class="container svelte-lj7r42">
+
+
+<article><h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-grey">Inlägg 2</h1>
+  <p class="my-4 text-lg text-gray-500">Published: 2024-05-13</p>
+  <p><strong>Knapparnas funktion</strong></p>
+<p>Jag ändrade lite på tidigare kod och nu istället för ett if-kommando
+använder jag mig av nya mappar inuti min redan existerande casino app
+i visual studios för att ha spelen i för att ordna koden. Och skickar
+spelaren till en ny hemsida vid ett klick på spelknappen:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">on:click=&#123;() =&gt; &#123;  
+            window.location.href = game.page;
+        &#125;&#125;</code><!-- HTML_TAG_END --></pre>
+<p>där game.page kan vara t.ex. ‘/casino/blackjack’.</p>
+<p>Jag lade också till så att knapparna blev större när man höll musen över dem
+samt sekade ner animationen:</p>
+<pre class="language-undefined"><!-- HTML_TAG_START --><code class="language-undefined">    transition: transform 0.5s;
+&#125;
+.game:hover&#123;
+    transform: scale(1.1);</code><!-- HTML_TAG_END --></pre>
+<p><strong>Lägga till spel</strong></p>
+<p>Jag har även lagt till spel i de nya mapparna med kod som jag hittat
+på nätet
+men behövt anpassa koden
+för att det ska funka i svelte samt designat om dem
+en del. Koden har jag hittat på codeopen.io.</p></article>
+</main>
+
+
+		<script type="module" data-sveltekit-hydrate="w3eal9">
+			import { start } from "../_app/immutable/start-809a4d77.js";
+
+			start({
+				env: {},
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="w3eal9"]').parentNode,
+				version: "1717402132592",
+				hydrate: {
+					node_ids: [0, 2, 7],
+					data: [null,null,null],
+					form: null
+				}
+			});
+		</script>
+	</div>
+	</body>
+</html>

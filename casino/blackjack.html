@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../icon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="content-security-policy" content="">
+		<link href="../_app/immutable/assets/app-51b40f09.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/_page-4a76595b.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-809a4d77.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-3b0df29e.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-e110e2be.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index-d6dba5bb.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper-41c905a7.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/control-f5b05b5f.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/parse-f0c618df.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-46b401f2.js">
+		<link rel="modulepreload" href="../_app/immutable/modules/pages/_layout.js-9cbb603b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_layout-da46b06b.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/casino/blackjack/_page.svelte-877a7f57.js">
+	</head>
+	<body>
+		<div style="display: contents">
+
+
+
+
+
+<form class="svelte-1h2paye"><input id="start" type="radio" name="start" required="required" class="svelte-1h2paye">
+    <label id="label-start" for="start" class="svelte-1h2paye">START</label>
+    <input id="stand" type="radio" class="svelte-1h2paye">
+    <label id="label-stand" for="stand" class="svelte-1h2paye">STAND</label>
+    <input id="hit-e" type="radio" class="svelte-1h2paye">
+    <label class="label-hit svelte-1h2paye" for="hit-e">HIT</label>
+    <input id="hit-d" type="radio" class="svelte-1h2paye">
+    <label class="label-hit svelte-1h2paye" for="hit-d">HIT</label>
+    <input id="hit-c" type="radio" class="svelte-1h2paye">
+    <label class="label-hit svelte-1h2paye" for="hit-c">HIT</label>
+    <div id="stage_container" class="svelte-1h2paye"><div class="stage svelte-1h2paye"><div class="stage__body stage__body--dealer svelte-1h2paye"><div class="stage__labels stage__labels--dealer svelte-1h2paye"><h2 class="stage__labels--main svelte-1h2paye">DEALER&#39;S HAND</h2>
+            <div class="stage__labels--total dealer-total svelte-1h2paye"><span class="sm svelte-1h2paye">DEALER&#39;S</span> TOTAL</div></div>
+          <div class="cards"><div class="card--da card--a card svelte-1h2paye"><div class="card__face svelte-1h2paye"></div></div>
+            <div class="card--db card--b card svelte-1h2paye"><div class="card__face svelte-1h2paye"></div></div>
+            <div class="card--dc card--c card svelte-1h2paye"><div class="card__face svelte-1h2paye"></div></div>
+            <div class="card--dd card--d card svelte-1h2paye"><div class="card__face svelte-1h2paye"></div></div>
+            <div class="card--de card--e card svelte-1h2paye"><div class="card__face svelte-1h2paye"></div></div></div></div>
+        <div class="stage__body stage__body--player svelte-1h2paye"><div class="stage__labels stage__labels--player svelte-1h2paye"><h2 class="stage__labels--main svelte-1h2paye">YOUR HAND</h2>
+            <div class="stage__labels--total user-total svelte-1h2paye"><span class="sm svelte-1h2paye">YOUR</span> TOTAL</div></div>
+          <div class="cards"><div class="card--ua card--a card svelte-1h2paye"><div class="card__face svelte-1h2paye"></div></div>
+            <div class="card--ub card--b card svelte-1h2paye"><div class="card__face svelte-1h2paye"></div></div>
+            <div class="card--uc card--c card svelte-1h2paye"><div class="card__face svelte-1h2paye"></div></div>
+            <div class="card--ud card--d card svelte-1h2paye"><div class="card__face svelte-1h2paye"></div></div>
+            <div class="card--ue card--e card svelte-1h2paye"><div class="card__face svelte-1h2paye"></div></div></div></div></div>
+      <div class="message svelte-1h2paye" id="player_bust"><div class="message__interior svelte-1h2paye"><p class="message__label svelte-1h2paye">You bust</p></div></div>
+      <div class="message svelte-1h2paye" id="dealer_bust"><div class="message__interior svelte-1h2paye"><p class="message__label svelte-1h2paye">Dealer busts</p></div></div>
+      <div class="message svelte-1h2paye" id="game_result"><div class="message__interior svelte-1h2paye"><p class="message__label svelte-1h2paye">You Win</p></div>
+        <div class="message__interior svelte-1h2paye"><p class="message__label svelte-1h2paye">Push</p></div>
+        <div class="message__interior svelte-1h2paye"><p class="message__label svelte-1h2paye">Dealer Wins</p></div></div></div></form>
+  <div class="button svelte-1h2paye">Return to hub</div>
+
+
+		<script type="module" data-sveltekit-hydrate="huc7vc">
+			import { start } from "../_app/immutable/start-809a4d77.js";
+
+			start({
+				env: {},
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="huc7vc"]').parentNode,
+				version: "1717402132592",
+				hydrate: {
+					node_ids: [0, 9],
+					data: [null,null],
+					form: null
+				}
+			});
+		</script>
+	</div>
+	</body>
+</html>
